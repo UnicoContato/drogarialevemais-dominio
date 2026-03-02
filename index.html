@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drogaria Leve Mais - Saúde e Economia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-50 font-['Outfit']">
+
+    <header id="header" class="fixed w-full z-50 transition-all duration-300 py-4 px-6 md:px-12 flex justify-between items-center backdrop-blur-md bg-white/70 border-b border-white/20">
+        <div class="text-2xl font-bold flex items-center gap-2">
+            <span class="text-blue-700">LEVE</span><span class="text-red-600">+</span><span class="text-blue-700">MAIS</span>
+        </div>
+        
+        <nav class="hidden md:flex gap-8 font-medium">
+            <a href="#inicio" class="hover:text-blue-700 transition">Início</a>
+            <a href="#sobre" class="hover:text-blue-700 transition">Sobre</a>
+            <a href="#servicos" class="hover:text-blue-700 transition">Serviços</a>
+            <a href="#galeria" class="hover:text-blue-700 transition">Galeria</a>
+            <a href="#contato" class="hover:text-blue-700 transition">Contato</a>
+        </nav>
+
+        <a href="https://wa.me/5511996983536" target="_blank" class="hidden md:block bg-blue-700 text-white px-6 py-2 rounded-full font-bold hover:bg-blue-800 transition shadow-lg shadow-blue-200">
+            WhatsApp
+        </a>
+
+        <button id="mobile-menu-btn" class="md:hidden text-blue-700">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+        </button>
+    </header>
+
+    <div id="mobile-menu" class="fixed inset-0 z-[60] bg-white/95 backdrop-blur-xl flex flex-col items-center justify-center gap-8 text-2xl font-bold transition-transform transform translate-x-full md:hidden">
+        <button id="close-menu" class="absolute top-6 right-6 text-blue-700">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+        </button>
+        <a href="#inicio" class="mobile-link">Início</a>
+        <a href="#sobre" class="mobile-link">Sobre</a>
+        <a href="#servicos" class="mobile-link">Serviços</a>
+        <a href="#galeria" class="mobile-link">Galeria</a>
+        <a href="#contato" class="mobile-link">Contato</a>
+    </div>
+
+    <section id="inicio" class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="img/1.jpeg" class="w-full h-full object-cover animate-zoom" alt="Fachada Drogaria Leve Mais">
+            <div class="absolute inset-0 bg-gradient-to-r from-blue-900/80 to-transparent"></div>
+        </div>
+        <div class="relative z-10 container mx-auto px-6 reveal">
+            <h1 class="text-5xl md:text-7xl font-bold text-white mb-4">Cuidar de você é o<br><span class="text-red-500 italic">nosso compromisso.</span></h1>
+            <p class="text-xl text-white/90 mb-8 max-w-lg">Atendimento humanizado, mix completo de medicamentos e os melhores suplementos em Salto/SP.</p>
+            <a href="#servicos" class="inline-block bg-gradient-to-r from-blue-600 to-blue-800 text-white px-10 py-4 rounded-full font-bold text-lg hover:scale-105 transition shadow-2xl relative overflow-hidden group">
+                <span class="relative z-10">Ver Serviços</span>
+                <div class="absolute inset-0 bg-white/20 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-500"></div>
+            </a>
+        </div>
+    </section>
+
+    <section id="sobre" class="py-24 bg-white relative">
+        <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div class="reveal">
+                <h2 class="text-4xl font-bold text-blue-900 mb-6">Tradição em Cuidar Bem</h2>
+                <p class="text-lg text-slate-600 mb-4">
+                    A Drogaria Leve Mais Popular é referência em Salto quando o assunto é saúde e economia. Com um atendimento acolhedor e profissional, nossa missão é garantir que você tenha acesso aos melhores tratamentos com a confiança que sua família merece.
+                </p>
+                <p class="text-lg text-slate-600">
+                    Especialistas em medicamentos e suplementação de alta performance, trabalhamos com as melhores marcas do mercado, focando sempre na qualidade e no suporte farmacêutico contínuo para nossos clientes.
+                </p>
+            </div>
+            <div class="reveal relative">
+                <div class="absolute -top-4 -left-4 w-24 h-24 bg-red-100 rounded-full blur-3xl opacity-50"></div>
+                <img src="img/2.jpeg" class="rounded-3xl shadow-2xl border border-slate-100 relative z-10" alt="Interior da Loja">
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos" class="py-24 bg-slate-50 relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-96 h-96 bg-blue-100 rounded-full blur-[100px] opacity-30"></div>
+        <div class="container mx-auto px-6 relative z-10 text-center">
+            <h2 class="text-4xl font-bold text-blue-900 mb-16 reveal">Nossos Diferenciais</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="glass-card reveal">
+                    <div class="bg-blue-100 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-blue-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.384-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" /></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Farmácia Completa</h3>
+                    <p class="text-slate-600 italic">Vasta linha de medicamentos éticos e genéricos com preços populares.</p>
+                </div>
+                <div class="glass-card reveal" style="transition-delay: 200ms;">
+                    <div class="bg-red-100 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Dermocosméticos</h3>
+                    <p class="text-slate-600 italic">As melhores marcas para o cuidado da pele e higiene pessoal.</p>
+                </div>
+                <div class="glass-card reveal" style="transition-delay: 400ms;">
+                    <div class="bg-green-100 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Suplementação</h3>
+                    <p class="text-slate-600 italic">Foco total em performance com os melhores suplementos do mercado.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="galeria" class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-blue-900 mb-16 text-center reveal">Conheça nossa Loja</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 reveal">
+                <img src="img/2.jpeg" class="gallery-img" alt="Interior 1">
+                <img src="img/3.jpeg" class="gallery-img" alt="Prateleiras">
+                <img src="img/4.jpeg" class="gallery-img" alt="Suplementos">
+                <img src="img/5.jpeg" class="gallery-img" alt="Produtos">
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="py-24 bg-slate-50 relative">
+        <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12">
+            <div class="reveal">
+                <h2 class="text-4xl font-bold text-blue-900 mb-8">Informações de Contato</h2>
+                <div class="space-y-6">
+                    <div class="flex items-center gap-4">
+                        <div class="text-blue-700 font-bold w-32 uppercase text-xs tracking-widest">Razão Social:</div>
+                        <div class="text-slate-700">LUIZ FERNANDO VERONEZ DROGARIA</div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="text-blue-700 font-bold w-32 uppercase text-xs tracking-widest">CNPJ:</div>
+                        <div class="text-slate-700">43.296.572/0001-72</div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="text-blue-700 font-bold w-32 uppercase text-xs tracking-widest mt-1">Endereço:</div>
+                        <div class="text-slate-700 italic">Av. 9 de Julho, 1661, Sala 8<br>Vila Roma, Salto/SP - CEP 13.321-443</div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="text-blue-700 font-bold w-32 uppercase text-xs tracking-widest">Fixo:</div>
+                        <div class="text-slate-700 font-bold">(11) 4021-3536</div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="text-blue-700 font-bold w-32 uppercase text-xs tracking-widest">WhatsApp:</div>
+                        <div class="text-slate-700 font-bold">(11) 9.9698-3536</div>
+                    </div>
+                </div>
+            </div>
+            <div class="reveal h-[400px] rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3665.485123456789!2d-47.28!3d-23.2!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf500000000000%3A0x0000000000000000!2sAv.%20Nove%20de%20Julho%2C%201661%20-%20Vila%20Roma%2C%20Salto%20-%20SP%2C%2013321-443!5e0!3m2!1spt-BR!2sbr!4v1700000000000" class="w-full h-full border-0" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 bg-blue-900 text-white text-center">
+        <p class="mb-4 font-bold tracking-widest uppercase text-xs text-blue-300">LUIZ FERNANDO VERONEZ DROGARIA</p>
+        <p class="text-blue-200/60 mb-6">CNPJ: 43.296.572/0001-72 | © 2026 Todos os direitos reservados</p>
+        <button id="privacy-btn" class="text-white underline opacity-70 hover:opacity-100 transition">Política de Privacidade</button>
+    </footer>
+
+    <div id="modal" class="hidden fixed inset-0 z-[100] flex items-center justify-center p-6 bg-blue-950/40 backdrop-blur-xl">
+        <div class="bg-white rounded-3xl max-w-2xl w-full p-8 shadow-2xl relative animate-fade-in">
+            <button id="close-modal" class="absolute top-6 right-6 text-slate-400 hover:text-blue-700 transition">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
+            </button>
+            <h2 class="text-3xl font-bold text-blue-900 mb-6">Política de Privacidade</h2>
+            <div class="text-slate-600 space-y-4 max-h-[60vh] overflow-y-auto pr-4 italic">
+                <p>Nossa Política de Privacidade descreve como coletamos e protegemos suas informações de acordo com a LGPD brasileira.</p>
+                <p>A Drogaria Leve Mais Popular utiliza dados fornecidos exclusivamente para comunicações diretas via WhatsApp e melhoria de serviços presenciais. Não compartilhamos informações com terceiros sem consentimento explícito.</p>
+                <p>Para dúvidas sobre seus dados, entre em contato através do telefone (11) 4021-3536.</p>
+            </div>
+        </div>
+    </div>
+
+    <a href="https://wa.me/5511996983536" target="_blank" class="fixed bottom-6 right-6 z-50 bg-green-500 text-white p-4 rounded-full shadow-2xl animate-pulse-custom hover:scale-110 transition">
+        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-2.277 0-4.156 1.884-4.156 4.156 0 .682.176 1.326.463 1.907l-1.141 3.208 3.208-1.141c.545.263 1.15.424 1.815.424 2.277 0 4.156-1.884 4.156-4.156 0-2.277-1.884-4.156-4.156-4.156zm4.846 4.156c0 2.67-2.176 4.846-4.846 4.846-.664 0-1.289-.136-1.859-.38l-2.484.884.884-2.484c-.314-.648-.484-1.372-.484-2.146 0-2.67 2.176-4.846 4.846-4.846 2.67 0 4.846 2.176 4.846 4.846z"/></svg>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
